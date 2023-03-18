@@ -19,6 +19,7 @@ function ChatContainer({ currentChat, currentUser }) {
       setMessages([response.data]);
     };
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
   const handleSendMsg = async (msg) => {
     await axios.post('/msg', {

@@ -24,6 +24,7 @@ function Welcome() {
         .catch((err) => console.log(err));
     };
     users();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const filterCard = (event) => {
     const values = event.target.value.tolowerCase();
