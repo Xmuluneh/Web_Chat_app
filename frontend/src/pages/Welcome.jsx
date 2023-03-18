@@ -11,6 +11,7 @@ import './Chat.css';
 function Welcome() {
   const navigate = useNavigate();
   const [dev, setDev] = useState([]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const [users, setUsers] = useEffect([]);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ function Welcome() {
     users();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const filterCard = (event) => {
+  const filterCards = (event) => {
     const values = event.target.value.tolowerCase();
     const filteredUsers = dev.filter((dev) =>
       `${dev.firstName} ${dev.lastName}`.toLowerCase.includes(value)
