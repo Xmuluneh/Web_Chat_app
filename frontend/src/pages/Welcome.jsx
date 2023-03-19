@@ -30,7 +30,7 @@ function Welcome() {
   const filterCards = (event) => {
     const values = event.target.value.tolowerCase();
     const filteredUsers = dev.filter((dev) =>
-      `${dev.firstName} ${dev.lastName}`.toLowerCase.includes(value)
+      `${dev.firstName} ${dev.lastName}`.toLowerCase.includes(values)
     );
     setUsers(filteredUsers);
   };
