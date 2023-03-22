@@ -7,7 +7,7 @@ backend software engineer wants to find a front end engineer to do a project tog
 
 ### Prerequisites and Installation
 
-Initialize an npm package with npm init This will generate a <mark style={color:red}>package.json</mark>.
+Initialize npm package with npm init This will generate a <mark style={color:red}>package.json</mark>.
 
 ```javaScript
 npm init -y
