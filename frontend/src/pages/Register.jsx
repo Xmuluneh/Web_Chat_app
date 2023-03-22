@@ -301,13 +301,13 @@ function Register() {
                             src={<Image src={images} />}
                           />
                         </div>
-                        <input
+                        {/* <input
                           type='button'
                           className='picbtn'
                           name='photo'
                           value='New'
                           onClick={(e) => inputChange(e)}
-                        />
+                        /> */}
                       </div>
                     </div>
 

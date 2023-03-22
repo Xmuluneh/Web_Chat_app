@@ -1,4 +1,4 @@
-const createError = require('http-errors');
+import createError from 'http-errors';
 
 // 404 page not found
 function notFoundHandler(req, res, next) {

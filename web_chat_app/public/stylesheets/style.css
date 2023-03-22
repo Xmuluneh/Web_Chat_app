@@ -1,8 +1,8 @@
 /*
  * Title: Project style sheet
  * Description: This is the main project style sheet of this project
- * Author: Kazi Ariyan ( Easy Learning Academy )
- * Date: 01/01/2022
+ * Author: Aaron Abraham 
+ * Date: 14/03/2023
  *
  */
 
@@ -75,7 +75,7 @@ input.error {
   border: 1px solid var(--red);
 }
 
-input[type="submit"] {
+input[type='submit'] {
   margin: 2rem auto;
   width: 200px;
   background: linear-gradient(to right, var(--green), var(--blue));
@@ -84,7 +84,7 @@ input[type="submit"] {
   transition: transform 0.1s ease-in-out;
 }
 
-input[type="submit"]:active {
+input[type='submit']:active {
   transform: scale(0.99);
 }
 
@@ -194,9 +194,9 @@ input[type="submit"]:active {
 #chat-container {
   display: grid;
   grid:
-    "search-container chat-title" 71px
-    "conversation-list chat-message-list" 1fr
-    "new-message-container chat-form" 78px
+    'search-container chat-title' 71px
+    'conversation-list chat-message-list' 1fr
+    'new-message-container chat-form' 78px
     /275px 1fr;
   min-width: 800px;
   max-width: 1000px;
@@ -462,9 +462,9 @@ input[type="submit"]:active {
     min-width: 90%;
     height: 88vh;
     grid:
-      "search-container chat-title" 71px
-      "conversation-list chat-message-list" 1fr
-      "new-message-container chat-form" 78px
+      'search-container chat-title' 71px
+      'conversation-list chat-message-list' 1fr
+      'new-message-container chat-form' 78px
       /70px 1fr;
   }
 
@@ -496,14 +496,14 @@ input[type="submit"]:active {
   background: var(--primary);
   border-radius: 10px;
   grid-template-areas:
-    "left-column branding"
-    "left-column login-form";
+    'left-column branding'
+    'left-column login-form';
 }
 
 #left-column {
   grid-area: left-column;
   background-color: var(--tertiary);
-  background-image: url("../images/illustration.png");
+  background-image: url('../images/illustration.png');
   background-size: 68%;
   background-position: center;
   background-repeat: no-repeat;
@@ -555,8 +555,8 @@ input[type="submit"]:active {
     width: 80%;
     height: 80vh;
     grid-template-areas:
-      "branding"
-      "login-form";
+      'branding'
+      'login-form';
   }
 
   #left-column {

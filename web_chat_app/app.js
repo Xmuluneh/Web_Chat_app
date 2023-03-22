@@ -10,7 +10,9 @@ import {
   notFoundHandler,
   errorHandler,
 } from './middleware/commons/errorHandler.js';
-import loginRouter from './controller/loginController';
+import loginRouter from './router/loginRouter';
+import usersRouter from './router/usersRouter';
+import inboxRouters from './router/inboxRouters';
 const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = path.dirname(__filename);

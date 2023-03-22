@@ -3,7 +3,7 @@ import axios from './axiosInstance';
 import { useNavigate, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Card from '..components/Cards';
-import { BiSearch, BiChat, BiUser, BiEnvelope } from 'react-icons/bi';
+import { BiSearch, BiChat, BiUser } from 'react-icons/bi';
 import { BsKeyboard } from 'react-icons/bs';
 import Logout from '../components/Logout';
 import './Welcome.css';
