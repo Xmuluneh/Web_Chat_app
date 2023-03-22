@@ -8,3 +8,31 @@ backend software engineer wants to find a front end engineer to do a project tog
 ```
 npm init y
 ```
+
+```
+npm install express
+```
+
+```
+npm install dotenv
+```
+
+```
+npm install mongoose
+```
+
+```
+npm install cookies-parser
+```
+
+```
+npm install express-validator
+```
+
+```
+nom install jsonwebtoken
+```
+
+```
+npm install http-errors
+```
