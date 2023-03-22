@@ -6,7 +6,7 @@ backend software engineer wants to find a front end engineer to do a project tog
 # Installation
 
 ```
-npm init y
+npm init -y
 ```
 
 ```
