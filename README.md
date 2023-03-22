@@ -7,7 +7,8 @@ backend software engineer wants to find a front end engineer to do a project tog
 
 ### Prerequisites and Installation
 
-Initialize npm package with npm init This will generate a <mark style="color: red; opacity: 0.80;">package.json</mark>.
+<ul>
+<li>Initialize npm package with npm init This will generate a <mark style="color: red; opacity: 0.80;">package.json</mark>.</li>
 
 ```javaScript
 npm init -y
@@ -48,3 +49,5 @@ npm install ejs
 ```javaScript
 npm install nodemon
 ```
+
+</ul>
