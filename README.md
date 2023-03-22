@@ -36,3 +36,11 @@ nom install jsonwebtoken
 ```
 npm install http-errors
 ```
+
+```
+npm install ejs
+```
+
+```
+npm install nodemon
+```
