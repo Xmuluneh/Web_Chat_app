@@ -8,12 +8,13 @@ backend software engineer wants to find a front end engineer to do a project tog
 ### Prerequisites and Installation
 
 <ul>
-<li>Initialize npm package with npm init This will generate a <mark style="color: red; opacity: 0.80;">package.json</mark>.</li>
+<li>Initialize npm package with npm init .This will generate a package.json
 
 ```javaScript
 npm init -y
 ```
 
+<li>Installation express using the npm install command</li>
 ```javaScrip
 npm install express
 ```
