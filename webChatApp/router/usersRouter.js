@@ -1,6 +1,6 @@
 'use strict';
 import express from 'express';
-import { getUsers } from '../controller/usersController.js';
+import { addUser, getUsers } from '../controller/usersController.js';
 import decoratorHtmlResponse from '../middleware/commons/decorateHtmlResponse.js';
 import avatarUpload from '../middleware/users/avatarsUpload.js';
 import {
@@ -11,6 +11,12 @@ const router = express.Router();
 router.get('/', decoratorHtmlResponse('Users'), getUsers);
 
 // add user
-router.post('/', avatarUpload, addValidators, addUserValidationHandler);
+router.post(
+  '/',
+  avatarUpload,
+  addValidators,
+  addUserValidationHandler,
+  addUser
+);
 
 export default router;

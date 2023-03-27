@@ -35,7 +35,7 @@
 
   // Success Toast
   const successToast = Toastify({
-    text: 'User was added successfully!',
+    text: 'User is added',
     duration: 1000,
   });
 
@@ -81,11 +81,11 @@
         errorPlaceholder.style.display = 'block';
       });
     } else {
-      // success
+      // successfully load the toaster.
       successToast.showToast();
       closeModal();
       document.querySelector('p.error').style.display = 'none';
-      // reload this page after 1 sec
+      // reload this page after 1000 millisecond
       setTimeout(() => {
         location.reload();
       }, 1000);
