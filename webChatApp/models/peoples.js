@@ -5,9 +5,9 @@ const peopleSchema = mongoose.Schema(
     name: { type: String, required: true, trim: true },
     email: { type: Number, required: true, trim: true, lowercase: true },
     mobile: { type: String, required: true },
-    password: { type: string, required: true },
+    password: { type: String, required: true },
     avatar: { type: String },
-    role: { type: string, enum: ['admin', 'user'], default: 'user' },
+    role: { type: String, enum: ['admin', 'user'], default: 'user' },
   },
   { timestamp: true }
 );
