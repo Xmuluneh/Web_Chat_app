@@ -66,31 +66,4 @@ const addUserValidationHandler = function (req, res, next) {
   }
 };
 
-async function removeUser(req, res, next) {
-  try {
-    const user = await User.findByIdAndRemove({
-      _id: req.params.id,
-    });
-    if (user.avatar) {
-      unlink(
-        path.join(__dirname, `/../public.uploads/avatars/${user.avatar}`),
-        (err) => {
-          if (err) console.log(err);
-        }
-      );
-    }
-    res.status(200).json({
-      message: 'users is removed',
-    });
-  } catch (err) {
-    res.status(500).json({
-      errors: {
-        common: {
-          message: 'Could not remove user',
-        },
-      },
-    });
-  }
-}
-
-export { addValidators, addUserValidationHandler, removeUser };
+export { addValidators, addUserValidationHandler };

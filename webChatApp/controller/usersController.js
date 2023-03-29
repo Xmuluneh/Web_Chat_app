@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import path from 'path';
 import User from '../models/peoples.js';
-
+import { unlink } from 'fs';
 // get user from Db
 async function getUsers(req, res, next) {
   try {

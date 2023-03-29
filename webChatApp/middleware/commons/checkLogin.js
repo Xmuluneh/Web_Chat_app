@@ -10,7 +10,6 @@ const checkLogin = (req, res, next) => {
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
       req.user = decoded;
 
-      // pass user info to response locals
       if (res.locals.html) {
         res.locals.loggedInUser = decoded;
       }

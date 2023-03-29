@@ -5,6 +5,7 @@ import {
   getUsers,
   removeUser,
 } from '../controller/usersController.js';
+import { checkLogin } from '../middleware/commons/checkLogin.js';
 import decoratorHtmlResponse from '../middleware/commons/decorateHtmlResponse.js';
 import avatarUpload from '../middleware/users/avatarsUpload.js';
 import {
@@ -12,7 +13,7 @@ import {
   addUserValidationHandler,
 } from '../middleware/users/userValidators.js';
 const router = express.Router();
-router.get('/', decoratorHtmlResponse('Users'), getUsers);
+router.get('/', decoratorHtmlResponse('Users'), checkLogin, getUsers);
 
 // add user
 router.post(

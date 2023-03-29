@@ -44,7 +44,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // EJS
-app.set('partials', './partials/header');
 app.set('view engine', 'ejs');
 
 // set the  static folder
