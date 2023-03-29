@@ -1,6 +1,10 @@
 'use strict';
 import express from 'express';
-import { addUser, getUsers } from '../controller/usersController.js';
+import {
+  addUser,
+  getUsers,
+  removeUser,
+} from '../controller/usersController.js';
 import decoratorHtmlResponse from '../middleware/commons/decorateHtmlResponse.js';
 import avatarUpload from '../middleware/users/avatarsUpload.js';
 import {
@@ -18,5 +22,6 @@ router.post(
   addUserValidationHandler,
   addUser
 );
+router.delete('/:id', removeUser);
 
 export default router;

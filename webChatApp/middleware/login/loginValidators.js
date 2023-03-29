@@ -1,12 +1,12 @@
-const { check, validationResult } = require('express-validator');
+import { check, validationResult } from 'express-validator';
 
 const doLoginValidators = [
   check('username')
     .isLength({
-      min: 1,
+      min: 2,
     })
     .withMessage('Mobile number or email is required'),
-  check('password').isLength({ min: 1 }).withMessage('password is required'),
+  check('password').isLength({ min: 2 }).withMessage('password is required'),
 ];
 
 const doLoginValidationHandler = function (req, res, next) {
