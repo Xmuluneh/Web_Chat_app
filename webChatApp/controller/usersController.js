@@ -53,8 +53,6 @@ async function removeUser(req, res, next) {
     const user = await User.findByIdAndDelete({
       _id: req.params.id,
     });
-
-    /// revmoe user avater
     if (user.avatar) {
       unlink(
         path.join(__dirname, `/../public/uploads/avatars/${user.avatar}`),

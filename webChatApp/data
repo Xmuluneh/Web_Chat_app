@@ -1,0 +1,24 @@
+message	`/Users/muluneh/Web_Chat_app/webChatApp/views/index.ejs`
+<%- include ('./partials/header.ejs') %>
+<div id="login-container">
+<div id="left-column"></div>
+Users/muluneh/Web_Chat_app/webChatApp/views/partials/header.ejs:
+ <!-- 
+<div class="menu">
+<% if (loggedInUser && loggedInUser.username) { %>
+    <div class="menu-item"><a href="/inbox">Inbox</a></div>
+    <div class="menu-item"><a href="/users">Users</a></div>
+    <div class="menu-item"><a href="#" onclick="logout()">Logout</a>
+    </div>
+    \n\nloggedInUser is not defined`
+
+
+    **********************************
+    	
+message	`/Users/muluneh/Web_Chat_app/webChatApp/views/index.ejs:
+<%- include ('webChatApp/views/partials/header.ejs') %>
+<div id="login-container">
+<div id="left-column"></div>
+<div id="branding">
+    \n\n
+    Could not find the include file "webChatApp/views/partials/header.ejs"`
