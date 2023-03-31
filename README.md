@@ -49,4 +49,10 @@ npm install ejs
 npm install nodemon
 ```
 
-</ul>
+```javaScript
+npm install multer
+```
+
+```javaScript
+npm install bcrypt
+```
